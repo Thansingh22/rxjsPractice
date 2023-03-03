@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataServiceService } from 'src/services/data-service.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-comp1',
+  templateUrl: './comp1.component.html',
+  styleUrls: ['./comp1.component.css']
 })
-export class AppComponent {
-  title = 'rxjsPractice';
+export class Comp1Component implements OnInit {
   username:string="Rani"
   constructor(private _userName:DataServiceService){
 
@@ -20,6 +19,6 @@ export class AppComponent {
 
   upateName(user:string){
     this._userName.userName.next(user);
-
   }
+
 }

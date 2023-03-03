@@ -1,17 +1,10 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-
 <div class="container py-5" >
     <div class="row">
         <div class="card col-md-4">
-            <h4>App Component - Name : {{username}}</h4>
+            <h4>Comp1 Component - Name : {{username}}</h4>
             <input type="text" placeholder="Enter Name .." #inputVal>
             <br>
             <div class="btn btn-primary" (click)="upateName(inputVal.value)">update</div>
         </div>
     </div>
 </div>
-
-<app-comp1></app-comp1>
-
-<app-comp2></app-comp2>

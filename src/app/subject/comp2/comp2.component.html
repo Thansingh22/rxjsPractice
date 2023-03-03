@@ -1,0 +1,30 @@
+<div class="container">
+    <br>
+    <input type="text" placeholder="Enter Something here.." class="form-control" [(ngModel)]="keyword"/>
+    {{keyword}}
+    <div class="box py-5">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID:</th>
+                    <th>Name:</th>
+                    <th>username:</th>
+                    <th>Email:</th>
+                    <th>Address:</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of userobj">
+                    <td>{{i.id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.username}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.address.city}}</td>
+                    <td>{{i.website}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

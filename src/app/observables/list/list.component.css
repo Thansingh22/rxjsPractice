@@ -1,0 +1,8 @@
+.list>ul>li{
+    padding:50px 40px;
+    background-color: rgb(239, 238, 238);
+    display:inline-block;
+    margin:50px 20px;
+    cursor: pointer;
+    border:1px solid gray;
+}
